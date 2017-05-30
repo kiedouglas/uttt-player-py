@@ -7,7 +7,7 @@ import re
 player_name = "random"
 
 def init_random_player():
-    samples_path = os.path.realpath(os.path.join(os.path.abspath(__file__), '../samples'))
+    samples_path = os.path.realpath(os.path.join(os.path.abspath(__file__), '../../samples'))
     player_path = os.path.join(samples_path, player_name + "_player_wrapper.py")
     _args = ("python3 " + player_path).split(" ")
     return subprocess.Popen(args=_args,\
