@@ -8,7 +8,7 @@ These samples exist to get you up and running quickly for a UTTT competition.
 You'll need to have python3 installed. See https://www.python.org/downloads/ for instructions, and download the latest version (3.6).
 Once that's done, you need to install the ultimate_ttt package on which this player depends:
 
-`sudo pip3 install ultimate_ttt`
+`pip3 install ultimate_ttt`
 
 ## Setting up the project
 
@@ -19,7 +19,7 @@ Alternatively, you can also clone it using:
 
 After you have cloned either the fork or the original repository, switch to the uttt-player-py directory and install the local package:
 
-`sudo pip3 install .`
+`pip3 install .`
 
 Run tests to make sure you have completed the setup correctly:
 
@@ -35,7 +35,7 @@ You can see that the random player just picks a valid board at random, then a va
 After you have made some changes, make sure to test your player works properly:
 
 ```
-sudo pip3 install . --upgrade
+pip3 install . --upgrade
 python3 setup.py test
 ```
 
