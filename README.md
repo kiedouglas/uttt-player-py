@@ -47,6 +47,8 @@ If you think you have a good approach, you can test your player against a random
 
 `uabc -p -f -g 100 “python3 samples/random_player_wrapper.py”`
 
+See https://socialgorithm.org/ultimate-ttt-docs/sections/player/testing_locally.html for more instructions, including how to setup uabc.
+
 ## I'm ready for battle!
 
 You'll be using *uabc* to play against others on the day; check with us for the exact command to run.
