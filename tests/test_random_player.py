@@ -10,7 +10,7 @@ def init_random_player():
     dir_path = os.path.dirname(os.path.dirname(__file__))
     samples_path = os.path.join(dir_path, 'samples')
     player_path = os.path.join(samples_path, player_name + "_player_wrapper.py")
-    _args = ("python3 " + player_path).split(" ")
+    _args = ("python " + player_path).split(" ")
     return subprocess.Popen(args=_args,\
                          stdin=subprocess.PIPE, stdout=subprocess.PIPE)
 
