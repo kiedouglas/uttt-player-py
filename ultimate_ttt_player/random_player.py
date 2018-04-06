@@ -8,6 +8,7 @@ from ultimate_ttt_player.ultimate_ttt_player import UltimateTTTPlayer
 class Random(UltimateTTTPlayer):
     def __init__(self, board_size=3):
         UltimateTTTPlayer.__init__(self)
+        self.log("Starting Player")
         self.board_size = board_size
         self.player = Player.ME
         self.opponent = Player.OPPONENT
@@ -15,6 +16,9 @@ class Random(UltimateTTTPlayer):
 
     def initialize(self):
         self.game = MainBoard(3)
+
+    def log(self, message):
+        self.logger.debug(message)
 
     def add_opponent_move(self, board, opponent_move):
         self.game = self.game.add_opponent_move(board, opponent_move)
