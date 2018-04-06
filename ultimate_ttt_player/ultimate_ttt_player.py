@@ -11,6 +11,7 @@ class UltimateTTTPlayer(metaclass=ABCMeta):
     def __init__(self):
         self.logger = logging.getLogger('ultimate_ttt_player')
         logging.basicConfig(filename='player_debug.log',
+                            filemode='w',
                             format='%(asctime)s %(message)s',
                             level=logging.DEBUG)
 
