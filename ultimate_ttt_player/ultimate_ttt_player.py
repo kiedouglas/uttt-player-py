@@ -10,7 +10,7 @@ from datetime import datetime
 class UltimateTTTPlayer(metaclass=ABCMeta):
     def __init__(self):
         self.logger = logging.getLogger('ultimate_ttt_player')
-        logging.basicConfig(filename=datetime.now().strftime('player_%H_%M_%d_%m_%Y.log'),
+        logging.basicConfig(filename='player_debug.log',
                             format='%(asctime)s %(message)s',
                             level=logging.DEBUG)
 
